@@ -4,4 +4,4 @@ Web-ohjelmointikurssin harjoitustyö ICT-projektina tehdylle sääasemalle. HTML
 Vapaasti käytettävissä / Free to use
 
 
-![Screenshot](http://imgur.com/a/7yn6c)
+![Screenshot](http://i.imgur.com/L6yoQOU.png)
