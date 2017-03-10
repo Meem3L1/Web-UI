@@ -1,0 +1,19 @@
+CREATE TABLE `weather_a` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `temperature1` float DEFAULT NULL,
+  `temperature2` float DEFAULT NULL,
+  `wind_speed1` float DEFAULT NULL,
+  `wind_speed2` float DEFAULT NULL,
+  `wind_direction1` float DEFAULT NULL,
+  `wind_direction2` float DEFAULT NULL,
+  `pressure1` float DEFAULT NULL,
+  `pressure2` float DEFAULT NULL,
+  `humidity_in` float DEFAULT NULL,
+  `humidity_out` float DEFAULT NULL,
+  `light1` float DEFAULT NULL,
+  `light2` float DEFAULT NULL,
+  `rain1` float DEFAULT NULL,
+  `rain2` float DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
