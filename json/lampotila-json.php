@@ -31,6 +31,6 @@
         //$taul['rows'][] = array("c" => array(array("v"=>$row['date_time']),array("v"=>$x),array("v"=>$y)));
     }
     $json_data = json_encode($taul, JSON_PRETTY_PRINT);
-    //echo $json_data;
+    echo $json_data;
     mysqli_close($conn);
 ?>

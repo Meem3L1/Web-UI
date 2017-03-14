@@ -17,8 +17,7 @@
 </head>
 
 <body>
-    <?php require_once('php/navbar.php'); 
-          require_once('php/conn.php'); ?>
+    <?php require_once('php/navbar.php'); ?>
 
         <h1 style="padding-left:20px;">Säätaulukko 1</h1>
         <div class="table-responsive" style="padding-left:20px;">
@@ -43,6 +42,17 @@
                 </thead>
                 <tbody>
                     <?php
+                        require_once('php/conf.php');
+                        // Create connection
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+                        $conn->set_charset("utf8");
+
+                        // Check connection
+                        if (!$conn) {
+                            die("Virhe yhteydessä: " . mysqli_connect_error());
+                        }
+                        // echo "Yhteys ok! </br></br>";
+                    
                         $sql = "SELECT * FROM weather_a ORDER by id desc LIMIT 1000";
                         $result = $conn->query($sql);
 
